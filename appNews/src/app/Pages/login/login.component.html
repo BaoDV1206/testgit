@@ -1,0 +1,44 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+        <div class=" text-center mt">
+          <img src="../../../favicon.ico" alt="">
+        </div>
+        <h1 class="text-center mt">Login</h1>
+        <form (ngSubmit)="formSubmit()" class="ml mr mt mb">
+          <p>
+            <mat-form-field class="widthfull" appearance="outline">
+              <mat-label>UserName</mat-label>
+              <input
+              required
+              [(ngModel)]="loginData.username"
+              name="userName"
+              matInput
+              placeholder="UserName...">
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field class="widthfull" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input
+              required
+              [(ngModel)]="loginData.password"
+              name="password"
+              matInput
+              placeholder="Password...">
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </p>
+          <div class="text-center">
+            <button type="submit" mat-raised-button color="primary">Register</button>
+            <button mat-raised-button color="accent" style="margin-left: 30px;">Clear</button>
+          </div>
+        </form>
+      </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

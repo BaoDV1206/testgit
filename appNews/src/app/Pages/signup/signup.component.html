@@ -1,0 +1,54 @@
+<div class="bootstrap-wrapper">
+  <div class="container main">
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-6 offset-md-3">
+        <div class="container text-center">
+          <img src="../../../favicon.ico" alt="">
+        </div>
+        <h1 class="text-center">Register!</h1>
+        <form (ngSubmit)="formSubmit()">
+          <p>
+            <mat-form-field class="widthfull" appearance="outline">
+              <mat-label>UserName</mat-label>
+              <input
+              required
+              [(ngModel)]="User.userName"
+              name="username"
+              matInput
+              placeholder="UserName...">
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field class="widthfull" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input
+              required
+              [(ngModel)]="User.emailId"
+              name="email"
+              matInput
+              placeholder="Email...">
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field class="widthfull" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input
+              required
+              [(ngModel)]="User.password"
+              name="password"
+              type="password"
+              matInput placeholder="Password...">
+              <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+          </p>
+          <div class="container text-center">
+            <button type="submit" mat-raised-button color="primary">Register</button>
+            <button mat-raised-button color="accent" style="margin-left: 30px;">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

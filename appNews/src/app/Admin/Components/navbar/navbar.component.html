@@ -1,0 +1,22 @@
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <a *ngIf="!loginService.isUserLogin()"
+  mat-icon-button class="login-icon mr" [routerLink]="'/login'">
+    login
+  </a>
+  <a
+  *ngIf="!loginService.isUserLogin()"
+  mat-icon-button class="register-icon mr" [routerLink]="'/signup'">
+    register
+  </a>
+  <button mat-button (click)="logout()" *ngIf="loginService.isUserLogin()">
+      logout
+  </button>
+  <button mat-button routerLink="/admin/profile" *ngIf="loginService.isUserLogin()">
+    {{ loginService.getUser().username }}
+  </button>
+</mat-toolbar>

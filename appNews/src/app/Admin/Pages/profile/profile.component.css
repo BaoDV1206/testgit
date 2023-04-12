@@ -1,0 +1,27 @@
+.profile-image {
+  max-width: 200px;
+  min-height: 200px;
+  border: 2px solid #ff4081;
+  border-radius: 50%;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tr td {
+  padding: 15px 10px;
+  border: 1px solid #ff4081;
+
+}

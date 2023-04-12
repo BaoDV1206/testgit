@@ -1,0 +1,42 @@
+<mat-card>
+  <h1>Bao profile details</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="container">
+        <div class="container text-center">
+          <img
+          src="https://th.bing.com/th/id/OIP.g-MJRZQDomgxUoXBHdP4FwHaE9?pid=ImgDet&rs=1"
+          alt=""
+          class="profile-image"
+          >
+          <h1 class="mt20">{{ user.username }}</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <table class="table text-center">
+              <tr>
+                <td>User Name</td>
+                <td>{{ user.username }}</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>{{ user.emailId }}</td>
+              </tr>
+              <tr>
+                <td>Role</td>
+                <td>{{ user.roles[0].name }}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="text-center">
+    <div class="container">
+      <button mat-raised-button color="primary" class="mr20">UPDATE</button>
+    <button mat-raised-button color="accent">SHARE</button>
+    </div>
+  </mat-card-actions>
+</mat-card>
+
